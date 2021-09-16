@@ -1,9 +1,12 @@
 package com.projectApplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClick2(View view) {
+
+        // Change color of button 1
+        Button thisButton1 = (Button) findViewById(R.id.mybutton1);
+        thisButton1.setBackgroundColor(Color.GREEN);
+
+        //Change color of button 2
+        Button thisButton2 = (Button) view;
+        thisButton1.setBackgroundColor(Color.RED);
+
         try {
             int iVariable;
             iVariable = 4;
