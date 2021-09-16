@@ -27,6 +27,21 @@ public class MainActivity extends AppCompatActivity {
         Log.v("DEVE304", "Testing error message.");
 
         Log.v("DEVE304", "onCreate()");
+
+/*
+        // Adding a listener to a button
+        // Try the application without that code and then remove comment and observe what changed.
+        final Button button = (Button) findViewById(R.id.mybutton1);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // your handler code here
+                Log.v("DEVE304", "Button clicked : programmed listener()");
+
+            }
+        });
+        */
+
+
     }
 
 
@@ -81,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Change color of button 2
         Button thisButton2 = (Button) view;
-        thisButton1.setBackgroundColor(Color.RED);
+        thisButton2.setBackgroundColor(Color.RED);
 
         try {
             int iVariable;
