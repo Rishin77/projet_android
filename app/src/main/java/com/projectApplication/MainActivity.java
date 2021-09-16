@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         Log.v("DEVE304", "onDestroy()");
     }
 
-    public void buttonClick(View view) {
+    public void buttonClick1(View view) {
 
         int iVariable;
         iVariable = 4;
@@ -68,6 +68,23 @@ public class MainActivity extends AppCompatActivity {
 
         // This will generate an exception
         Log.e("DEVE304", String.valueOf(12/iVariable));
+    }
+
+    public void buttonClick2(View view) {
+        try {
+            int iVariable;
+            iVariable = 4;
+            iVariable --;
+            iVariable --;
+            iVariable --;
+            iVariable --;
+
+            // This will generate an exception
+            Log.e("DEVE304", String.valueOf(12/iVariable));
+        }
+        catch (Exception e) {
+            System.out.println("buttonClick2 : Exception :  " + e.getMessage());
+        }
     }
 
 }
